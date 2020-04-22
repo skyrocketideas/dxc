@@ -1,7 +1,18 @@
+@font-face {
+  font-family: "GT-Walsheim-Pro-Bold";
+  src: url("../static/font/GT-Walsheim-Pro-Bold.woff2") format("truetype");
+}
+
+@font-face {
+  font-family: "GT-Walsheim-Pro-Regular";
+  src: url("../static/font/GT-Walsheim-Pro-Regular.woff2") format("truetype");
+}
+
 img {
   width: 100px;
 }
 
 h1 {
   color: blue;
+  font-family: "GT-Walsheim-Pro-Bold";
 }
