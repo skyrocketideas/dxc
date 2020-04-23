@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// Basic typography style for copy text
+// -----------------------------------------------------------------------------
+
+body {
+	color: var(--color-1-normal);
+	font-family: var(--secondary-font);
+}
+
+h1 {
+	font-family: var(--primary-font);
+	text-transform: uppercase;
+}
+
+h2 {
+	color: var(--color-1-gray);
+}

@@ -1,18 +1,11 @@
-@font-face {
-  font-family: "GT-Walsheim-Pro-Bold";
-  src: url("../static/font/GT-Walsheim-Pro-Bold.woff2") format("truetype");
-}
+// 1. Configuration and helpers
+@import "partials/abstracts/variables", "partials/abstracts/mixins";
 
-@font-face {
-  font-family: "GT-Walsheim-Pro-Regular";
-  src: url("../static/font/GT-Walsheim-Pro-Regular.woff2") format("truetype");
-}
+// 2. Base stuff
+@import "partials/base/base", "partials/base/fonts", "partials/base/typography", "partials/base/helpers";
 
-img {
-  width: 100px;
-}
+// 3. Layout-related sections
+@import "partials/layout/header", "partials/layout/footer";
 
-h1 {
-  color: blue;
-  font-family: "GT-Walsheim-Pro-Bold";
-}
+// 4. Components
+@import "partials/components/button";

@@ -1,0 +1,64 @@
+// -----------------------------------------------------------------------------
+// This file contains all mixins
+// -----------------------------------------------------------------------------
+
+@mixin flexCenter($aligned, $direction) {
+	display: flex;
+	justify-content: center;
+	align-items: $aligned;
+	flex-direction: $direction;
+}
+
+@mixin dropcap() {
+	float: left;
+	font-size: 7rem;
+	line-height: 7rem;
+	padding: 0 var(--padding);
+	color: var(--color-4-normal);
+}
+
+@mixin responsiveNav() {
+	nav {
+		position: relative;
+		.hamburger {
+			position: absolute;
+			cursor: pointer;
+			right: 5%;
+			top: 50%;
+			transform: translate(-5%, -50%);
+			z-index: 2;
+			.line {
+				width: 30px;
+				height: 3px;
+				background: var(--color-3-normal);
+				margin: 5px;
+			}
+		}
+		.nav-links {
+			opacity: 0;
+			position: fixed;
+			background: var(--color-4-normal);
+			height: 100vh;
+			width: 100%;
+			flex-direction: column;
+			padding: 2rem;
+			pointer-events: none;
+			transform: translate(100vw);
+			transition: all 0.8s ease-in-out;
+			&.open {
+				opacity: 1;
+				height: 100vh;
+				width: 100%;
+				pointer-events: all;
+				transform: translate(0vw);
+			}
+			li a {
+				font-size: 25px;
+				color: white;
+			}
+			li {
+				opacity: 0;
+			}
+		}
+	}
+}
