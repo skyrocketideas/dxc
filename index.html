@@ -8,9 +8,29 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>Test</h1>
-		<h2>DXC</h2>
-		<img src="./static/images/logos/logo_dxc_vertical.svg" width="183" height="178" alt="dxc logo" />
+		<div id="wrapper">
+			<header id="siteHeader">
+				<div id="logo">
+					<img src="./static/images/logos/logo_dxc_vertical.svg" width="183" height="178" alt="dxc logo" />
+				</div>
+				<nav>
+					<div id="hamburger">
+						<div class="line"></div>
+						<div class="line"></div>
+						<div class="line"></div>
+					</div>
+					<ul class="nav-links">
+						<li><a href="index.html">Home</a></li>
+						<li><a class="active" href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<div id="mainContainer"></div>
+			</main>
+			<footer>© DXC Technology 2020</footer>
+		</div>
 		<script src="index.js"></script>
 	</body>
 </html>

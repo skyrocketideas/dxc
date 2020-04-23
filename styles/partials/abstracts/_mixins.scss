@@ -16,3 +16,10 @@
 	padding: 0 var(--padding);
 	color: var(--color-4-normal);
 }
+
+@mixin line() {
+	width: 30px;
+	height: 3px;
+	background: var(--color-1-normal);
+	margin: 5px;
+}
