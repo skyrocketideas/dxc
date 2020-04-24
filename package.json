@@ -1,38 +1,39 @@
 {
-  "name": "dxc",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "@babel/polyfill": "7.8.7",
-    "@babel/runtime": "7.8.7",
-    "parcel-bundler": "^1.12.4"
-  },
-  "devDependencies": {
-    "@babel/core": "7.8.7",
-    "@babel/plugin-transform-runtime": "7.8.3",
-    "@babel/polyfill": "7.8.7",
-    "@babel/runtime": "7.8.7",
-    "@interactjs/types": "1.9.7",
-    "gh-pages": "^2.2.0",
-    "parcel-bundler": "1.12.4",
-    "parcel-plugin-static-files-copy": "^2.3.1",
-    "sass": "^1.26.3"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && parcel index.html --open",
-    "build": "parcel build *.html  --public-url ./",
-    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Indre101/dxc.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Indre101/dxc/issues"
-  },
-  "homepage": "https://github.com/Indre101/dxc#readme"
+	"name": "dxc",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"@babel/polyfill": "7.8.7",
+		"@babel/runtime": "7.8.7",
+		"parcel-bundler": "^1.12.4"
+	},
+	"devDependencies": {
+		"@babel/core": "7.8.7",
+		"@babel/plugin-transform-runtime": "7.8.3",
+		"@babel/polyfill": "7.8.7",
+		"@babel/runtime": "7.8.7",
+		"@interactjs/types": "1.9.7",
+		"gh-pages": "^2.2.0",
+		"parcel-bundler": "1.12.4",
+		"parcel-plugin-static-files-copy": "^2.3.1",
+		"sass": "^1.26.3"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npm run build && parcel index.html --open",
+		"build": "parcel build *.html  --public-url ./",
+		"build2": "rm -rf .cache && rm -rf dist && npm run build",
+		"deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Indre101/dxc.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Indre101/dxc/issues"
+	},
+	"homepage": "https://github.com/Indre101/dxc#readme"
 }
