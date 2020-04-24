@@ -5,10 +5,10 @@
 @import "partials/base/base", "partials/base/fonts", "partials/base/typography", "partials/base/helpers";
 
 // 3. Layout-related sections
-@import "partials/layout/header", "partials/layout/footer";
+@import "partials/layout/header", "partials/layout/footer", "partials/layout/main";
 
 // 4. Components
-@import "partials/components/button";
+@import "partials/components/button", "partials/components/form";
 
 .line {
 	@include line;

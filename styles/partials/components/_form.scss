@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all mixins
+// -----------------------------------------------------------------------------
+
+input,
+button {
+	border: none;
+	padding: 0.5rem;
+}
+
+textarea:invalid,
+input:invalid {
+	border: 3px solid red;
+	transition: var(--transition);
+}
+
+input {
+	transition: var(--transition);
+}
+
+button:hover {
+	background-color: var(--color-2-normal);
+	cursor: pointer;
+}
+
+.sign-up-form {
+	margin: auto;
+	background-color: var(--color-1-gray);
+	padding: 2rem;
+	max-width: 400px;
+	border: 2px solid black;
+}
+
+.form-group {
+	margin: 1rem 0;
+}
+
+.helper-text {
+	color: var(--color-3-normal);
+	font-size: 0.8rem;
+}
+
+label,
+.helper-text,
+input,
+textarea {
+	display: block;
+	width: 100%;
+}

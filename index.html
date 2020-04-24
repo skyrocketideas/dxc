@@ -8,7 +8,7 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<div id="wrapper">
+		<div id="pageWrapper">
 			<header id="siteHeader">
 				<div id="logo">
 					<img src="./static/images/logos/logo_dxc_vertical.svg" width="183" height="178" alt="dxc logo" />
@@ -27,7 +27,45 @@
 				</nav>
 			</header>
 			<main>
-				<div id="mainContainer"></div>
+				<div id="mainContainer">
+					<form action="#" method="post" class="sign-up-form">
+						<h2>Sign up</h2>
+						<div class="form-group">
+							<label for="fullName">Full name</label>
+							<span class="helper-text">Please enter full name</span>
+							<input type="text" id="fullName" name="fullName" placeholder="full name" required />
+						</div>
+						<div class="form-group">
+							<label for="workEmail">Work email</label>
+							<span class="helper-text">Please enter work email</span>
+							<input type="email" id="workEmail" name="workEmail" placeholder="work email" />
+						</div>
+						<div class="form-group">
+							<label for="companyName">Company name</label>
+							<span class="helper-text">Please enter company name</span>
+							<input type="text" id="companyName" name="companyName" placeholder="company name" />
+						</div>
+						<div class="form-group">
+							<label for="jobTitle">Job title</label>
+							<select name="jobTitle" id="jobTitle">
+								<option value="" selected>Please choose one</option>
+								<option value="ceo">CEO</option>
+								<option value="director">Director</option>
+								<option value="management">Management</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="country">Country</label>
+							<select name="selectCountry" id="selectCountry">
+								<option value="" selected>Please choose one</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<button class="sign-up-btn">Sign up</button>
+						</div>
+					</form>
+				</div>
 			</main>
 			<footer>© DXC Technology 2020</footer>
 		</div>
